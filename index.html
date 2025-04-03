@@ -20,256 +20,202 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" /> <!-- Update with your favicon -->
 
-  <!-- Put your site title here -->
+  <!-- === SEO Meta Tags === -->
   <title>
-    Syed Ali Hussnain | A Web Developer based in Lahore, Pakistan.
+    Halsey Swetzoff | Full-Stack Developer based in the U.S. <!-- <<<<< UPDATE THIS TITLE -->
   </title>
+  <meta name="description" content="[A brief and compelling description of yourself and your skills - e.g., Passionate front-end developer specializing in React and creating beautiful user experiences.]"> <!-- <<<<< UPDATE THIS DESCRIPTION -->
+  <meta name="keywords" content="[Your Name], [Skill 1], [Skill 2], [Skill 3], Web Developer, Front-end, Back-end, [Location]" /> <!-- <<<<< UPDATE KEYWORDS -->
 
-  <meta name="description" content="Add small description of yourslef.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <!-- === Stylesheets === -->
   <link rel="stylesheet" href="index.css" />
+
+  <!-- === Fonts (Optional: Preconnect for performance) === -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Example using Google Fonts (adjust as needed) -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-  <!-- ***** Header ***** -->
+  <!-- ============================================= -->
+  <!-- === Header & Navigation ===================== -->
+  <!-- ============================================= -->
+  <header class="header" id="top">
+    <nav class="nav container">
+      <a href="#top" class="nav__logo">🌒</a> <!-- <<<<< UPDATE NAME/LOGO -->
+      <ul class="nav__items">
+        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+        <!-- <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li> --> <!-- Optional: Uncomment if you keep the clients section -->
+        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
 
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
+    <div class="header__content container">
       <div class="header__text">
         <h1 class="heading-primary">
           <!-- Replace the following name with your name -->
-          <span>Syed Ali Hussnain</span>
+          <span>Halsey Swetzoff</span> <!-- <<<<< UPDATE YOUR NAME -->
         </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>A Web Developer based in Lahore, Pakistan.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
+        <!-- Put a short, impactful tagline about yourself -->
+        <p class="header__tagline"><strong>Web developer building the future.</strong></p> <!-- <<<<< UPDATE TAGLINE -->
+        <a href="#contact" class="btn btn--primary">Get in Touch</a>
       </div>
     </div>
   </header>
 
   <main role="main">
 
-    <!-- ***** Work ***** -->
+    <!-- ============================================= -->
+    <!-- === Work Section ============================ -->
+    <!-- ============================================= -->
+    <section class="work section" id="work">
+      <div class="container">
+        <h2 class="section__heading">Selected Work</h2>
+        <div class="work__grid">
 
-    <section class="work" id="work">
-      <div class="row">
-        <h2>My Work</h2>
-        <div class="work__boxes">
-
-          <!-- Each div with the work__box class is a project. -->
-
+          <!-- === Project 1 === -->
+          <!-- <<<<< UPDATE PROJECT DETAILS -->
           <div class="work__box">
+            <div class="work__image-box">
+              <img src="./images/project-1.png" class="work__image" alt="Screenshot of Portfolio Template project" /> <!-- <<<<< UPDATE IMAGE & ALT TEXT -->
+            </div>
             <div class="work__text">
-              <h3>Portfolio Template</h3>
-              <p>
-                A free Open Source Portfolio for anyone to use for free.
-              </p>
-              <ul class="work__list">
+              <h3 class="work__title">Portfolio Template</h3> <!-- <<<<< UPDATE TITLE -->
+              <p class="work__description">
+                A sleek, modern, and open-source portfolio template designed for developers to showcase their work effectively.
+              </p> <!-- <<<<< UPDATE DESCRIPTION -->
+              <ul class="work__tags">
+                <!-- <<<<< UPDATE SKILLS/TOOLS USED -->
                 <li>HTML</li>
-                <li>SCSS</li>
+                <li>CSS</li>
                 <li>JavaScript</li>
-                <li>Parcel</li>
               </ul>
-
               <div class="work__links">
-                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
-                </a>
+                <a href="https://nisar.surge.sh" target="_blank" rel="noopener noreferrer" class="link__text">
+                  Visit Site <span>→</span>
+                </a> <!-- <<<<< UPDATE LIVE LINK -->
+                <a href="https://github.com/nisarhassan12/portfolio" target="_blank" rel="noopener noreferrer" title="View Source Code" class="work__code-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="work__code-icon"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a> <!-- <<<<< UPDATE GITHUB LINK -->
               </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
+          </div> <!-- /work__box -->
 
+          <!-- === Project 2 === -->
+          <!-- <<<<< ADD MORE PROJECTS FOLLOWING THE SAME STRUCTURE -->
           <div class="work__box">
-            <div class="work__text">
-              <h3>Calculator</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
+             <div class="work__image-box">
+               <img src="./images/project-2.png" class="work__image" alt="Project 2 Screenshot" /> <!-- <<<<< UPDATE IMAGE & ALT TEXT -->
+             </div>
+             <div class="work__text">
+               <h3 class="work__title">Project Title Two</h3> <!-- <<<<< UPDATE TITLE -->
+               <p class="work__description">
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, eius. Describe your project here.
+               </p> <!-- <<<<< UPDATE DESCRIPTION -->
+               <ul class="work__tags">
+                 <!-- <<<<< UPDATE SKILLS/TOOLS USED -->
+                 <li>React</li>
+                 <li>Node.js</li>
+                 <li>Express</li>
+               </ul>
+               <div class="work__links">
+                 <a href="#" target="_blank" rel="noopener noreferrer" class="link__text">
+                   Visit Site <span>→</span>
+                 </a> <!-- <<<<< UPDATE LIVE LINK -->
+                 <a href="#" target="_blank" rel="noopener noreferrer" title="View Source Code" class="work__code-link">
+                   <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="work__code-icon"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                 </a> <!-- <<<<< UPDATE GITHUB LINK -->
+               </div>
+             </div>
+           </div> <!-- /work__box -->
 
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
+           <!-- Add Project 3 here -->
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Notificator</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
-              </p>
-              <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
-            </div>
-          </div>
-        </div>
-      </div>
+        </div> <!-- /work__grid -->
+      </div> <!-- /container -->
     </section>
 
-    <!-- ***** Clients ***** -->
-
-    <section class="client" id="clients">
-      <div class="row">
-        <h2>Clients</h2>
+    <!-- ============================================= -->
+    <!-- === Clients Section (Optional) ============== -->
+    <!-- ============================================= -->
+    <!-- If you don't have clients or prefer not to show logos, you can remove this section -->
+    <!--
+    <section class="client section" id="clients">
+      <div class="container">
+        <h2 class="section__heading">Worked With</h2>
         <div class="client__logos">
-          <!-- Add logos of the clients or companies you'have worked with. -->
-          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
-          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
-          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
-          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
-          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
-          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
+          <!- - Add logos of the clients or companies you've worked with. Make sure they are suitably sized and ideally SVGs or transparent PNGs - ->
+          <!- - <<<<< UPDATE CLIENT LOGOS AND ALT TEXT -->
+          <!-- <img src="./images/ronjones.png" class="client__logo" alt="Ron Jones Logo" />
+          <img src="./images/goldengrid.png" class="client__logo" alt="Golden Grid Logo" />
+          <img src="./images/bullseye.png" class="client__logo" alt="Bullseye Logo" />
+          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Mighty Furnitures Logo" />
+          <img src="./images/fastlane.png" class="client__logo" alt="Fastlane Logo" />
+          <img src="./images/chippy.png" class="client__logo" alt="Chippy Logo" /> ->
         </div>
       </div>
     </section>
+    -->
 
-    <!-- ***** About ***** -->
-
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
+    <!-- ============================================= -->
+    <!-- === About Section =========================== -->
+    <!-- ============================================= -->
+    <section class="about section" id="about">
+      <div class="container">
+        <h2 class="section__heading">About Me</h2>
         <div class="about__content">
           <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
+            <!-- Replace the below paragraphs with info about yourself -->
+            <!-- <<<<< UPDATE ABOUT TEXT -->
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
-              nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
-              in vel, ex quam quidem quos mollitia labore aut sunt eius
-              ratione molestiae fuga veniam facere similique voluptate.
+              Hi, I'm [Your Name]! I'm passionate about [mention your main passion, e.g., building intuitive web applications, solving complex problems, creating beautiful UIs]. My journey into web development started [briefly mention origin story, e.g., back in college, with a personal project, etc.].
+            </p>
+            <p>
+              I specialize in [mention key skills/technologies, e.g., front-end development with React and Vue, back-end with Node.js and Python, full-stack solutions]. I enjoy turning ideas into reality through clean, efficient code and user-centric design. When I'm not coding, you can find me [mention a hobby or two, e.g., exploring trails, reading sci-fi novels, contributing to open source].
             </p>
             <!-- Provide a link to your resume -->
-            <a href="#" class="btn">My Resume</a>
+            <a href="./resume/your-resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">View My Resume</a> <!-- <<<<< UPDATE RESUME LINK -->
           </div>
 
           <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
+            <!-- Add a professional, high-quality photo of yourself -->
+            <img class="about__photo" src="./images/your-photo.jpg" alt="[Your Name], [Your Role]"> <!-- <<<<< UPDATE IMAGE & ALT TEXT -->
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- ***** Contact ***** -->
-
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
+  <!-- ============================================= -->
+  <!-- === Contact Section ========================= -->
+  <!-- ============================================= -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <h2 class="section__heading">Get in Touch</h2>
+      <div class="contact__content">
         <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
-        </p>
+          I'm currently looking for new opportunities, and my inbox is always open. Whether you have a question, a project proposal, or just want to say hi, I'll do my best to get back to you!
+        </p> <!-- <<<<< UPDATE CONTACT MESSAGE IF NEEDED -->
         <!-- Replace the email with yours -->
-        <a href="mailto:you@example.com" class="btn">you@example.com</a>
+        <a href="mailto:your.email@example.com" class="btn btn--primary btn--large">your.email@example.com</a> <!-- <<<<< UPDATE EMAIL ADDRESS -->
       </div>
     </div>
   </section>
-
-  <!-- ***** Footer ***** -->
-
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/nisarhassan12/" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
-
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-      <p>
-        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
-      </p>
-      <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
-      </div>
-    </div>
-  </footer>
-
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  <a href="#top" class="back-to-top" title="Back to Top" aria-label="Back to Top">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+      <path d="M12 8l-6 6 1.41 1.41L12 10.83l4.59 4.58L18 14l-6-6z"/>
+    </svg>
   </a>
+
+  <!-- ============================================= -->
+  <!-- === Scripts ================================= -->
+  <!-- ============================================= -->
   <script src="./index.js"></script>
 </body>
 
