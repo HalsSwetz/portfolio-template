@@ -9,9 +9,9 @@
   /* Color Palette (Classic Complementary: Navy, Off-White, Gold) */
   --color-background: #0a192f; /* Deep Navy */
   --color-background-alt: #172a45; /* Slightly Lighter Navy */
-  --color-text-primary: #ccd6f6;  /* Light Greyish Blue (for body text) */
+  --color-text-primary: #e9edf9;  /* Light Greyish Blue (for body text) */
   --color-text-secondary: #a8b2d1; /* Lighter Greyish Blue (for less important text) */
-  --color-heading: #e6f1ff;       /* Brightest White/Blue (for headings) */
+  --color-heading: #086df3;       /* Brightest White/Blue (for headings) */
   --color-accent: #e4b363;        /* Muted Gold */
   --color-accent-darker: #c89b51; /* Darker Gold for hover */
   --color-border: #233554;
@@ -240,7 +240,7 @@ a:hover, a:focus {
   flex-direction: column;
   position: relative;
   /* background-color: var(--color-background); */
-  background-image: url('https://cdn.pixabay.com/photo/2023/03/15/14/19/wave-7854660_1280.jpg');
+  background-image: url('https://cdn.pixabay.com/photo/2016/11/22/19/33/sea-1850228_1280.jpg');
   background-size: cover;
   background-attachment: fixed;
   padding-top: 40px;
@@ -345,7 +345,7 @@ a:hover, a:focus {
   align-items: center;
   justify-content: center;
   font-size: var(--font-size-lg);
-  color: rgb(244, 228, 81);
+  color: rgb(14, 53, 243);
   margin-top: var(--spacing-sm);
   margin-bottom: var(--spacing-xl);
 }
